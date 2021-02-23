@@ -17,7 +17,7 @@ import com.nagarro.service.domain.Service;
 import com.nagarro.service.service.ServiceService;
 
 @RestController
-@RequestMapping(value = "/service")
+@RequestMapping(value = "/services")
 public class ServiceController {
     @Autowired
     ServiceService serviceService;
