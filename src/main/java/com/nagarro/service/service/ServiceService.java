@@ -2,10 +2,12 @@ package com.nagarro.service.service;
 
 import java.util.List;
 
-import com.nagarro.service.domain.Service;
+import com.nagarro.service.domain.ServiceEntity;
 
 public interface ServiceService{
-    public List<Service>getAllServices();
+    public List<ServiceEntity>getAllServices();
 
-    public void addService(Service service);
+    public void addService(ServiceEntity serviceEntity);
+
+	public ServiceEntity getServiceById(Integer id) throws Exception;
 }
