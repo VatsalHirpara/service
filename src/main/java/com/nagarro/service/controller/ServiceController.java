@@ -29,12 +29,6 @@ public class ServiceController {
 		return serviceService.getAllServices();
 	}
 
-	@PostMapping()
-	public ResponseEntity<String> addService(@Valid @RequestBody ServiceEntity serviceEntity) {
-		serviceService.addService(serviceEntity);
-		return new ResponseEntity<>("ServiceEntity successfully added", HttpStatus.CREATED);
-	}
-
 	@GetMapping("/{id}")
 	public ResponseEntity<ResponseTO<ServiceEntity>> getServiceById(@PathVariable @Valid Integer id) throws Exception {
 		ResponseTO<ServiceEntity> response = new ResponseTO<>();

@@ -46,11 +46,6 @@ public class ServiceServiceImpl implements ServiceService {
 	}
 
 	@Override
-	public void addService(ServiceEntity serviceEntity) {
-		this.servicesList.add(serviceEntity);
-	}
-
-	@Override
 	public ServiceEntity getServiceById(Integer id) throws Exception {
 		for (ServiceEntity serviceEntity : servicesList) {
 			if (serviceEntity.getId() == id)

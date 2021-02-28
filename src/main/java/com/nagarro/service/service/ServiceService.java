@@ -7,7 +7,5 @@ import com.nagarro.service.domain.ServiceEntity;
 public interface ServiceService{
     public List<ServiceEntity>getAllServices();
 
-    public void addService(ServiceEntity serviceEntity);
-
 	public ServiceEntity getServiceById(Integer id) throws Exception;
 }
